@@ -7,9 +7,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #2
-dataset = pd.read_csv('data/features.csv')
+dataset = pd.read_csv('data/features.csv', header=None)
+resultset = pd.read_csv('data/Basic_Arbiter_70000_simulation_data.csv', header=None)
 X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 64].values
+y = resultset.iloc[:, 64].values
 
 #3
 from sklearn.model_selection import train_test_split
