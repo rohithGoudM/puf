@@ -25,7 +25,7 @@ print(df)
 
 
 for r in range(rows):
-	print(df[r])
+	# print(df[r])
 	x = 0
 	flag = 0
 	for i in range(columns):
@@ -35,7 +35,7 @@ for r in range(rows):
 	for i in range(columns):
 		if(df[r][i]==0):
 			flag=1
-		pf[r][i] = custom_phi(x)
+		# pf[r][i] = custom_phi(x)
 		if(flag==1):
 			flag=0
 			x=x-1
